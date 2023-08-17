@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/Pages/login.dart';
 import 'Pages/Home.dart';
-
 
 void main() {
   runApp(Firstapp());
@@ -12,37 +12,38 @@ class Firstapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  
     return MaterialApp(
       //dont use this ase we are using at routes
       // home:Home(),
 
-
       //changing colour of the ui
       //theme mode . light for light mode
-      // we have to first define what is dark theme to use this metod as below 
+      // we have to first define what is dark theme to use this metod as below
       themeMode: ThemeMode.light,
       //primary swatch is used to define the colour we want from the banner apart from theme
-      theme: ThemeData(primarySwatch: Colors.red),
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+        fontFamily: GoogleFonts.lato().fontFamily,
+      ),
+
       darkTheme: ThemeData(
         brightness: Brightness.dark,
         //as it is dark theme so it will not work and overridden so better to use in light as dark is more./..
-        primarySwatch: Colors.lime,),
+        primarySwatch: Colors.lime,
+      ),
 
-        //to open whichever route we want as initially
-        initialRoute: "/login",
+      //to open whichever route we want as initially
+      initialRoute: "/login",
 
 //all the things are given by routes so we have to select a primary route
-routes:{
-  //by default
-  "/" :(context) => Home(),
+      routes: {
+        //by default
+        "/": (context) => Home(),
 
-  //we have to define which we have to go
-  "/Home" :(context) => Home(),
-  "/login" :(context) => Login(),
-
-  },
-
+        //we have to define which we have to go
+        "/Home": (context) => Home(),
+        "/login": (context) => Login(),
+      },
     );
   }
 }
