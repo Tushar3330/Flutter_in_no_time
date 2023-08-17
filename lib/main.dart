@@ -1,6 +1,9 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/Pages/login.dart';
+import 'package:myapp/utils/routes.dart';
 import 'Pages/Home.dart';
 
 void main() {
@@ -38,11 +41,12 @@ class Firstapp extends StatelessWidget {
 //all the things are given by routes so we have to select a primary route
       routes: {
         //by default
+      
         "/": (context) => Home(),
 
         //we have to define which we have to go
-        "/Home": (context) => Home(),
-        "/login": (context) => Login(),
+        Myroutes.Homeroute: (context) => Home(),
+       Myroutes.loginroute: (context) => Login(),
       },
     );
   }
