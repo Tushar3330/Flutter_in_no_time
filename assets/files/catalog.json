@@ -1,0 +1,42 @@
+{
+    "products" : [
+       {
+      "id": 1,
+      "name": "EK ka do",
+      "descr": "Invest your luck get 2x",
+      "color": "#33505a",
+      "price": 10,
+      "image":"https://i1.wp.com/www.europeanbusinessreview.com/wp-content/uploads/2022/02/casino-lede-1300x867-1.jpeg?strip=all"
+    },
+    {
+        "id": 2,
+        "name": "EK ka paanch",
+        "descr": "Invest your luck get 5x",
+        "color": "#A8DADC",
+        "price": 100,
+        "image":"https://www.lapiazzaweb.it/wp-content/uploads/2023/06/Quali-sono-i-migliori-giochi-Immagine1.png"
+      },  {
+        "id": 3,
+        "name": "EK ka Dus",
+        "descr": "Invest your luck get 10x",
+        "color": " #F4A261",
+        "price": 150,
+        "image":"https://www.deepskyparts.com/wp-content/uploads/2023/06/adobestock-309554820-3.jpeg"
+      },  {
+        "id": 4,
+        "name": "Royal Rumble",
+        "descr": "Play if you really want Money",
+        "color": "#457B9D",
+        "price": 1000,
+        "image":"https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1689680312.jpg"
+      },  {
+        "id": 5,
+        "name": "Sattabazar Special",
+        "descr": "Lets test your luck and win all",
+        "color": "#E9C46A",
+        "price": 10000,
+        "image":"https://worldfinancialreview.com/wp-content/uploads/2021/04/bitcoin-and-roulette.jpg"
+      }
+
+    ]
+}
